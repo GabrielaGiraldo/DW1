@@ -1,0 +1,87 @@
+
+/* Contenido */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    height: calc(100% - 100px);
+    max-width: calc(100% - 50px);     
+    width: 100%;
+    margin: auto;
+}
+
+article{
+    width: 100%;
+    max-width: 520px;
+}
+
+picture img{
+    height: 450px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.button_info{
+    height: 15px;
+    width: auto;
+    background-color: #5f9ea0;
+    border-radius: 5px;
+}
+
+/* Contenedor flotante */
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #ffff;
+    height: calc(100% - 50px);
+    min-width: calc(100% - 100px);
+    padding: 0px 50px;
+}
+
+.modal img {
+    height: 40vh;
+    width: auto;
+}
+
+.modal.m--show {
+    opacity: 1;
+    pointer-events: inherit;
+}
+
+.modal #descripcion {
+    font-family: sans-serif;
+}
+
+form .input {
+    width: calc(100% - 16px);
+    margin: 8px 0px;
+    padding: 8px;
+    background-color: #ffff;
+    border: none;
+    border-radius: 8px;
+}
+
+
+form #enviar {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #5f9ea0;
+    color:#ffff;
+}
